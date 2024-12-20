@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("../../../public/fonts/against.ttf") format("truetype");
+}
+
+/* Styles for the Intro Section */
+.main-intro-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin-bottom: -100px;
+}
+
+.main-intro-lines h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.pd {
+  font-size: 5rem;  
+  font-family: "Dancing Script", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-top: -50px;
+}
+
+.highlight {
+  color: #923afd;
+  font-weight: light;
+}
+
+.main-intro-lines .wave-2 img {
+  width: 60px;
+  height: auto;
+  margin-left: -570px;
+  margin-top: -25px;
+  opacity: 0.6;
+}
