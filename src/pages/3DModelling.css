@@ -1,0 +1,74 @@
+/* General styles */
+.industrial-container {
+  padding: 2rem;
+  font-family: "lufga", sans-serif;
+  max-height: 100vh;
+  width: 100%;
+  margin: 0 100px;
+}
+
+/* Projects container */
+.industrial-projects {
+  margin-top: 2rem;
+}
+
+/* Project card styles */
+
+.industrial-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2rem 35%;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.8s ease-in-out forwards;
+  animation-delay: calc(var(--delay, 0) * 0.2s);
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.industrial-project:hover {
+  transform: translateY(-5px);
+}
+
+.industrial-project-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.industrial-project-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.industrial-project-icon:hover {
+  transform: scale(1.2) rotate(2deg);
+}
+
+/* Project details */
+.industrial-project-details {
+  flex: 1;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.industrial-project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.industrial-project-description {
+  font-size: 1rem;
+  color: #555;
+}

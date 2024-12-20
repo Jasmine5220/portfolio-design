@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Outfit:wght@100..900&display=swap');
+
+/* Styles for the Hello */
+.hello-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  align-items: center;
+  font-family: Arial, cursive;
+}
+
+.hello {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-right: 8px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 0.6rem;
+}
+
+.wavey1 {
+  size: 2.2rem;
+  opacity: 0.8;
+  margin-left: 80px;
+  margin-top: -80px;
+}

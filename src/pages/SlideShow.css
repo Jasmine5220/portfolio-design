@@ -1,0 +1,68 @@
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Content Area */
+.slideshow-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.slideshow-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slideshow-content.fade-out {
+  opacity: 0;
+  transform: translateY(10%);
+}
+
+/* Dots Container */
+.dots-container {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Dots */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color:rgb(182, 124, 252);
+}
+
+.dot:hover {
+  background-color: #923AFD;
+}
+
+/* Smooth Transition Effect */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
